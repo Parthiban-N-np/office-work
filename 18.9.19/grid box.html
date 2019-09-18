@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+        *{
+            box-sizing:border-box;
+        }
+        .box{
+            float:left;
+            width:30%;
+            padding:10px;
+        }
+        .img-container{
+            float:left;
+            width:20%;
+        }
+        .clearfix::after{
+            content:"";
+            clear:both;
+            display:table;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="clearfix">
+            <div class=box style="background-color: rgb(81, 235, 81)">
+            <p>hello</p>
+        </div>
+        <div class =box style="background-color: limegreen">
+        <p>Hello</p>
+        </div>
+        <div class= box style="background-color: lime">
+        <p>HELLO</p></div>
+        <div class="img-container">
+            <img src="G:\HTML training\office-work\project\images\parthi.jpg" alt="parthi" width:"30px">
+        </div>
+        <div class="img-container">
+                <img src="G:\HTML training\office-work\project\images\parthi.jpg" alt="parthi" width:"30px">
+            </div>
+            <div class="img-container">
+                    <img src="G:\HTML training\office-work\project\images\parthi.jpg" alt="parthi" width:"30px">
+                </div>
+        </div>
+    </body>
+</html>

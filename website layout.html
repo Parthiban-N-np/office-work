@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header, .footer{
+            background-color: grey;
+            color: white;
+            padding: 15px;
+        }
+        .row {
+            float:left;
+            padding: 15px;
+        }
+        .clearfix::after {
+            content:"";
+            clear:both;
+            display:table;
+        }
+        .menu{
+            width:25%;
+        }
+        .menu li{
+            padding: 8px;
+            margin-bottom:8px;
+            background-color: blue;
+            color:#ffffff;
+        }
+        .menuli.hover{
+            background-color: #0099cc;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>INDIA</h1>
+        </div>
+        <div class="clearfix">
+            <div class="row menu">
+                <ul>
+                    <li>Chennai</li>
+                    <li>Mumbai</li>
+                    <li>Delhi</li>
+                    <li>Bangalore</li>
+                </ul>
+            </div>
+            <div class="row content">
+                <h1>India</h1>
+                <p>India is one of the country in Asia. It is also a well developing country in the world</p>
+            </div>
+        </div>
+    </body>
+</html>
