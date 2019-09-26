@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <p id="fun"></p>
+        <script>
+        var person = {
+            firstName:"PARTHIBAN",
+            lastName:"N",
+            dept:"CSE",
+            fullName : function(){
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        document.getElementById("fun").innerHTML = person.fullName();
+        </script>
+    </body>
+</html>

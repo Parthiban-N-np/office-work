@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <p id="we"></p>
+        <script>
+        document.getElementById("we").innerHTML=
+        "the temperature is" + tocelsius(90) + "celsius";
+        function tocelsius(farenheit){
+            return (5/9) * (farenheit-32);
+        }
+        </script>
+    </body>
+</html>
