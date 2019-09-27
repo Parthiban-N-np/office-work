@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <p id = "gun"></p>
+        <p id = "ak"></p>
+        <p id = "mk"></p>
+        <p id = "mini"></p>
+        <script>
+        document.getElementById("gun").innerHTML = 
+        Number(true) +"<br>"+
+        Number(false)+"<br>"+
+        Number("10")+"<br>"+
+        Number(" 10")+"<br>"+
+        Number("10 ")+"<br>"+
+        Number(" 10 ")+"<br>"+
+        Number("10.33")+"<br>"+
+        Number("10,33")+"<br>"+
+        Number("10 33")+"<br>"+
+        Number("Parthiban");
+        var x = new Date("2019-09-27");
+        document.getElementById("ak").innerHTML = Number(x);
+        document.getElementById("mk").innerHTML =
+        parseInt("10") + "<br>" +
+        parseInt("10.33") + "<br>" +
+        parseInt("10 6") + "<br>" +
+        parseInt("10 years") + "<br>" +
+        parseInt("years 10");
+        document.getElementById("mini").innerHTML =
+        parseFloat("10") + "<br>" +
+        parseFloat("10.33") + "<br>" +
+        parseFloat("10 6") + "<br>" +
+        parseFloat("10 years") + "<br>" +
+        parseFloat("years 10");
+        </script>
+    </body>
+</html>

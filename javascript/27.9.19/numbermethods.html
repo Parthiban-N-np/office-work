@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <p id="domain"></p>
+        <p id="demo"></p>
+        <p id="dam"></p>
+        <p id="red"></p>
+        <p id="blur"></p>
+        <script>
+        var x = 234;
+        document.getElementById("domain").innerHTML =
+        x.toString() +"<br>" +
+        (234).toString() +"<br>" +
+        (200 + 34).toString();
+        var y = 241;
+        document.getElementById("demo").innerHTML = 
+        y.toExponential() + "<br>" +
+        y.toExponential(2) + "<br>" +
+        y.toExponential(4) + "<br>" +
+        y.toExponential(6);
+        var z = 321;
+        document.getElementById("dam").innerHTML =
+        z.toFixed(0) + "<br>" +
+        z.toFixed(2) + "<br>" +
+        z.toFixed(4) + "<br>" +
+        z.toFixed(6);
+        var a = 2.35;
+        document.getElementById("red").innerHTML = 
+        a.toPrecision() + "<br>" +
+        a.toPrecision(2) + "<br>" +
+        a.toPrecision(4) + "<br>" +
+        a.toPrecision(6);
+        var b = 22;
+        document.getElementById("blur").innerHTML =
+        b.valueOf() + "<br>" +
+        (22).valueOf() + "<br>" +
+        (100+22).valueOf();
+        </script>
+    </body>
+</html>
