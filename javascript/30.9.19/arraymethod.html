@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <button onclick="myfunction()">ADD</button>
+        <button onclick="myfunction1()">Add</button>
+        <p id = "fruit"></p>
+        <p id = "fruits"></p>
+        <p id = "fruites"></p>
+        <p id = "call"></p>
+        <script>
+        var fruits = ["Apple" , "Orange" , "Grapes" , "Water Melon"];
+        document.getElementById("fruits").innerHTML = fruits;
+        fruits.shift();
+        fruits.unshift("Green Apple");
+        document.getElementById("fruits").innerHTML = fruits.pop();
+        document.getElementById("fruites").innerHTML = fruits;
+        function myfunction(){
+            fruits.push("kiwi");
+            document.getElementById("fruites").innerHTML = fruits;
+        }
+        document.getElementById("call").innerHTML = "original Array:<br>" + fruits;
+        function myfunction1(){
+            fruits.splice(2,4, "Banana" , "Mango");
+            document.getElementById("call").innerHTML = "New Array:<br>" + fruits;
+        }
+        </script>
+    </body>
+</html>

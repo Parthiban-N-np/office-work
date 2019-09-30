@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <button onclick="myFunction()">Bring It</button>
+        <p id ="Data"></p>
+        <script>
+        var Bike = ["Pulsar", "RX", "Apache", "Duke", "Ducati"];
+        document.getElementById("Data").innerHTML = Bike;
+        function myFunction(){
+            Bike.sort();
+            Bike.reverse();
+            document.getElementById("Data").innerHTML = Bike;
+        }
+        </script>
+    </body>
+</html>

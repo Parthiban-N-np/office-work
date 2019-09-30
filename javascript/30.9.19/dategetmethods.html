@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <p id="date"></p>
+        <p id ="dates"></p>
+        <p id ="viper"></p>
+        <p id ="Ron"></p>
+        <p id ="box"></p>
+        <script>
+        var d=new Date();
+        var months=
+        ["January","February","March","April","May","June","July","August","September","October",
+        "November","December"];
+        document.getElementById("date").innerHTML=d.getTime();
+        document.getElementById("dates").innerHTML=d.getFullYear();
+        document.getElementById("date").innerHTML = months[d.getMonth()];
+        document.getElementById("viper").innerHTML=d.getMinutes();
+        document.getElementById("Ron").innerHTML=d.getSeconds();
+        document.getElementById("box").innerHTML=d.getMilliseconds();
+        </script>
+    </body>
+</html>
