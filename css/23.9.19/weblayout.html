@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Css weblayout</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+            }
+            .header {
+                background-color: lime;
+                padding: 20px;
+                text-align:center;
+            }
+            .topnav{
+                overflow:hidden;
+                background-color: #333;
+            }
+            .topnav a{
+                float:left;
+                display:block;
+                color:#aaa;
+                text-align: center;
+                padding:14px 16px;
+                text-decoration: none;
+            }
+            .topnav a:hover{
+                background-color: #e3e;
+                color:violet;
+            }
+            .column{
+                float:left;
+                width:30%;
+                padding:15px;
+            }
+            .column.side{
+                width:25%;
+            }
+            .column.middle{
+                width:50%;
+            }
+            .row:after{
+                content:"";
+                display:table;
+                clear:both;
+            }
+            @media screen and (max-width: 600px)
+            {
+                .column{
+                    width:100%;
+                }
+            } 
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+        <div class="topnav">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </div>
+        <div class="row">
+            <div class="column side">
+                <p>A header is usually located at the top of the website 
+                    (or right below a top navigation menu). It often contains a logo or the website </p>
+            </div>
+        <div class="column middle">
+            <p>A header is usually located at the top of the website 
+                (or right below a top navigation menu). It often contains a logo or the website
+                A header is usually located at the top of the website 
+                (or right below a top navigation menu). It often contains a logo or the website </p>
+        </div>
+        <div class="column side">
+                <p>A header is usually located at the top of the website 
+                    (or right below a top navigation menu). It often contains a logo or the website </p>
+            </div>
+        </div>
+    </body>
+</html>

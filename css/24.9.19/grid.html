@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <style>
+            .grid-container{
+                display:grid;
+                align-content: center;
+                grid-column-gap: 50px;
+                grid-row-gap: 40px;
+                grid-gap: 30px 45px;
+                grid-template-columns: 90px 350px auto 30px;
+                background-color: blueviolet;
+                padding: 12px;
+            }
+            .grid-container>div{
+                background-color: rgba(199, 6, 6,0.6);
+                padding:20px 0;
+                font-size: 30px;
+            }
+            .grid-item{
+                background-color: rgba(21, 156, 197, 0.3);
+                border: 1px solid rgba(0,0,0,0.8);
+                padding:20px;
+                font-size: 30px;
+                text-align: center;
+            }
+            .item1{
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="item1">W</div>
+            <div class="item2">E</div>
+            <div class="item3">L</div>
+            <div class="item4">C</div>
+            <div class="grid-item">O</div>
+            <div class="grid-item">M</div>
+            <div class="grid-item">E</div>
+            <div class="grid-item">HO</div>
+            <div class="grid-item">ME</div>
+        </div>
+    </body>
+</html>

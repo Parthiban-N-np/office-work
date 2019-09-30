@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+            div.static{
+                position: static;
+                border:4px solid #ff5530;
+            }
+            div.relative{
+                position:relative;
+                right:30px;
+                width:60%;
+                height: 20%;
+                border:4px dashed #00f563;
+            }
+            div.absolute{
+                position:absolute;
+                top:100px;
+                right:90px;
+                width:20%;
+                height:15%;
+                border:3px double #77cc00;
+            }
+            div.sticky{
+                position:-webkit-sticky;
+                position:sticky;
+                top:0;
+                padding: 5px;
+                background-color: lightgreen;
+                border: 3px solid #00f563;
+            }
+            img{
+                position:absolute;
+                left:20px;
+                bottom:300px;
+                z-index: -1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="static">
+            Position static
+        </div><br/>
+        <div class="relative">
+            position relative
+            <div class="absolute">position absolute</div>
+        </div><br/>
+        <div class="sticky">welcome</div><br/>
+        <img src ="G:\HTML training\office-work\project\images\earth.gif " width="100" height="90">
+        <p>In z-index -1 represent the image is behind the text</p>
+    </body>
+</html>

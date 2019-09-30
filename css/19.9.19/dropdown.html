@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <style>
+            .dropbtn{
+                background-color: #4caf50;
+                color:whitesmoke;
+                padding:16px;
+                font-size:16px;
+                border:none;
+                cursor:pointer;
+            }
+            .dropdown{
+                position:relative;
+                display:inline-block;
+            }
+            .dropdown-content {
+                display:none;
+                position:absolute;
+                background-color: rgb(94, 94, 94);
+                min-width: 160px;/*default value*/
+                box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+                padding:12px 16px;
+                z-index:1;
+            }
+            .dropdown-content a{
+                color:black;
+                padding:12px 16px;
+                text-decoration: none;
+                display:block;
+            }
+            .dropdown-content a:hover{background-color: #f1f1f1}
+            .dropdown:hover .dropdown-content{
+                display:block;
+            }
+            .dropdown:hover .dropbtn{
+                background-color: #3e8e41;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Helo</h1>
+        <div class="dropdown" style="float:left;">
+            <button class="dropbtn">left</button>
+            <div class="dropdown-content" style="left:0;">
+                <a href="https://www.google.com/" target="_blank">Google</a>
+                <a href="https://in.yahoo.com/?p=us" target="_blank">Yahoo</a>
+                <a href="https://outlook.live.com/owa/" target="_blank">Outlook</a>
+            </div>
+        </div>
+            <div class="dropdown" style="float:right;">
+                    <button class="dropbtn">Right</button>
+                    <div class="dropdown-content" style="right:0;">
+                        <a href="https://www.google.com/" target="_blank">Google</a>
+                        <a href="https://in.yahoo.com/?p=us" target="_blank">Yahoo</a>
+                        <a href="https://outlook.live.com/owa/" target="_blank">Outlook</a>
+                    </div>
+                </div>
+    </body>
+</html>

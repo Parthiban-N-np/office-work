@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <button onclick="myFunction()">Guess</button>
+        <p id="cat">Microsoft and Microsoft</p>
+        <script>
+        function myFunction() {
+            var str = document.getElementById("cat").innerHTML;
+            var txt = str.replace(/MICROSOFT/i , "W3Schools");
+            document.getElementById("cat").innerHTML = txt;
+            alert(str.trim());
+        }
+        </script>
+    </body>
+</html>
