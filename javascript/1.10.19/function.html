@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <p id="ddd">Add</p>
+        <p id="dd">Sub</p>
+        <p id="ee">Mul</p>
+        <p id="ff">Div</p>
+        <script>
+        add(15,5);
+        function add(xx,yy){
+            //document.getElementById("ddd").innerHTML= a + b;
+            return xx + yy;
+        }
+        var d=15;
+        var e=10;
+        var f=sub();
+        function sub(){
+            document.getElementById("dd").innerHTML = d - e;
+        }
+        var g=5;
+        var h=2;
+        var i=mul();
+        function mul(){
+            document.getElementById("ee").innerHTML = g * h;
+        }
+        var j=10;
+        var k=5;3
+        var l=div(10,5);
+        function div(){
+            document.getElementById("ff").innerHTML=j/k;
+        } 
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="hhh"></p>
+        <script>
+        function findMax() {
+            var i;
+            var max=-Infinity;
+            for(i=0;i<arguments.length;i++){
+                if(arguments[i]>max){
+                    max=arguments[i];
+                }
+            }
+            return max;
+        }
+        document.getElementById("demo").innerHTML=findMax(4,5,6);
+        function sumALL() {
+            var i;
+            var sum = 0;
+            for(i=0;i<arguments.length;i++) {
+                sum +=arguments[i];
+            }
+            return sum;
+        }
+        document.getElementById("hhh").innerHTML=sumALL(1,200,333,444,550);
+        </script>
+    </body>
+</html>

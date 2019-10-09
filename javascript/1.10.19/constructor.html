@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <p id = "sea"></p>
+        <script>
+        var bike = ["RX100", "RX135", "NS200", "Duke"];
+        document.getElementById("sea").innerHTML= isArray(bike);
+        function isArray(myArray){
+            return myArray.constructor.toString().indexOf("Array") > 1;
+        }
+        </script>
+    </body>
+</html>
